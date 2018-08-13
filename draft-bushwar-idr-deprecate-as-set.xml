@@ -25,24 +25,6 @@
     <title abbrev="template">Deprecation of AS_SET and AS_CONFED_SET in
     BGP</title>
 
-    <author fullname="Warren Kumari" initials="W." surname="Kumari">
-      <organization>Google</organization>
-
-      <address>
-        <postal>
-          <street>1600 Amphitheatre Parkway</street>
-
-          <city>Mountain View, CA</city>
-
-          <code>94043</code>
-
-          <country>US</country>
-        </postal>
-
-        <email>warren@kumari.net</email>
-      </address>
-    </author>
-
     <author fullname="Randy Bush" initials="R." surname="Bush">
       <organization>Internet Initiative Japan</organization>
 
@@ -61,7 +43,25 @@
       </address>
     </author>
 
-    <date day="30" month="January" year="2015"/>
+    <author fullname="Warren Kumari" initials="W." surname="Kumari">
+      <organization>Google</organization>
+
+      <address>
+        <postal>
+          <street>1600 Amphitheatre Parkway</street>
+
+          <city>Mountain View, CA</city>
+
+          <code>94043</code>
+
+          <country>US</country>
+        </postal>
+
+        <email>warren@kumari.net</email>
+      </address>
+    </author>
+
+    <date day="12" month="August" year="2018"/>
 
     <abstract>
       <t>RFC 6472, published in 2011, recommends against the use of the AS_SET
@@ -77,9 +77,9 @@
       etc. They will be removed before publication.]</t>
 
       <t>[ This document is being collaborated on in Github at:
-      https://github.com/__URL__. The most recent version of the document,
-      open issues, etc should all be available here. The authors (gratefully)
-      accept pull requests ]</t>
+      https://github.com/wkumari/draft-bushwar-idr-deprecate-as-set . The most
+      recent version of the document, open issues, etc should all be available
+      here. The authors (gratefully) accept pull requests ]</t>
     </abstract>
   </front>
 
@@ -233,10 +233,10 @@
             <artwork><![CDATA[ATOMIC_AGGREGATE   see Section 5.1.6 and 9.1.4]]></artwork>
           </figure></t>
 
-        <t>Delete the entirety of<xref target="RFC4271"/> Section 5.1.6.
+        <t>Delete the entirety of<xref target="RFC4271"/> Section 5.1.6
         ATOMIC_AGGREGATE.</t>
 
-        <t>From <xref target="RFC4271"/> Section 9.1.4. replace the last
+        <t>From <xref target="RFC4271"/> Section 9.1.4 replace the last
         paragraph:</t>
 
         <t><figure>
@@ -266,7 +266,7 @@
    NOT be de-aggregated.]]></artwork>
           </figure></t>
 
-        <t>From <xref target="RFC4271"/> Section 9.2.2.2. remove:<figure>
+        <t>From <xref target="RFC4271"/> Section 9.2.2.2 remove:<figure>
             <artwork><![CDATA[    ATOMIC_AGGREGATE:
          If at least one of the routes to be aggregated has
          ATOMIC_AGGREGATE path attribute, then the aggregated route

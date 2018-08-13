@@ -4,11 +4,11 @@
 
 
 
-Network Working Group                                          W. Kumari
-Internet-Draft                                                    Google
-Intended status: Informational                                   R. Bush
-Expires: August 3, 2015                        Internet Initiative Japan
-                                                        January 30, 2015
+Network Working Group                                            R. Bush
+Internet-Draft                                 Internet Initiative Japan
+Intended status: Informational                                 W. Kumari
+Expires: February 13, 2019                                        Google
+                                                         August 12, 2018
 
 
              Deprecation of AS_SET and AS_CONFED_SET in BGP
@@ -28,9 +28,9 @@ Abstract
    etc.  They will be removed before publication.]
 
    [ This document is being collaborated on in Github at:
-   https://github.com/__URL__. The most recent version of the document,
-   open issues, etc should all be available here.  The authors
-   (gratefully) accept pull requests ]
+   https://github.com/wkumari/draft-bushwar-idr-deprecate-as-set . The
+   most recent version of the document, open issues, etc should all be
+   available here.  The authors (gratefully) accept pull requests ]
 
 Status of This Memo
 
@@ -40,14 +40,14 @@ Status of This Memo
    Internet-Drafts are working documents of the Internet Engineering
    Task Force (IETF).  Note that other groups may also distribute
    working documents as Internet-Drafts.  The list of current Internet-
-   Drafts is at http://datatracker.ietf.org/drafts/current/.
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
 
    Internet-Drafts are draft documents valid for a maximum of six months
    and may be updated, replaced, or obsoleted by other documents at any
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on August 3, 2015.
+   This Internet-Draft will expire on February 13, 2019.
 
 
 
@@ -55,19 +55,19 @@ Status of This Memo
 
 
 
-Kumari & Bush            Expires August 3, 2015                 [Page 1]
+Bush & Kumari           Expires February 13, 2019               [Page 1]
 
-Internet-Draft                  template                    January 2015
+Internet-Draft                  template                     August 2018
 
 
 Copyright Notice
 
-   Copyright (c) 2015 IETF Trust and the persons identified as the
+   Copyright (c) 2018 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
    Provisions Relating to IETF Documents
-   (http://trustee.ietf.org/license-info) in effect on the date of
+   (https://trustee.ietf.org/license-info) in effect on the date of
    publication of this document.  Please review these documents
    carefully, as they describe your rights and restrictions with respect
    to this document.  Code Components extracted from this document must
@@ -111,9 +111,9 @@ Table of Contents
 
 
 
-Kumari & Bush            Expires August 3, 2015                 [Page 2]
+Bush & Kumari           Expires February 13, 2019               [Page 2]
 
-Internet-Draft                  template                    January 2015
+Internet-Draft                  template                     August 2018
 
 
    This document completes that work by deprecating AS_SETs (and
@@ -167,9 +167,9 @@ Internet-Draft                  template                    January 2015
 
 
 
-Kumari & Bush            Expires August 3, 2015                 [Page 3]
+Bush & Kumari           Expires February 13, 2019               [Page 3]
 
-Internet-Draft                  template                    January 2015
+Internet-Draft                  template                     August 2018
 
 
  b) AS_PATH (Type Code 2):
@@ -223,9 +223,9 @@ Internet-Draft                  template                    January 2015
 
 
 
-Kumari & Bush            Expires August 3, 2015                 [Page 4]
+Bush & Kumari           Expires February 13, 2019               [Page 4]
 
-Internet-Draft                  template                    January 2015
+Internet-Draft                  template                     August 2018
 
 
          Similarly, neighborAS(n) is a function that returns the
@@ -266,11 +266,9 @@ Internet-Draft                  template                    January 2015
 
    ATOMIC_AGGREGATE   see Section 5.1.6 and 9.1.4
 
-   Delete the entirety of[RFC4271] Section 5.1.6.  ATOMIC_AGGREGATE.
+   Delete the entirety of[RFC4271] Section 5.1.6 ATOMIC_AGGREGATE.
 
-   From [RFC4271] Section 9.1.4. replace the last paragraph:
-
-
+   From [RFC4271] Section 9.1.4 replace the last paragraph:
 
 
 
@@ -279,9 +277,11 @@ Internet-Draft                  template                    January 2015
 
 
 
-Kumari & Bush            Expires August 3, 2015                 [Page 5]
+
+
+Bush & Kumari           Expires February 13, 2019               [Page 5]
 
-Internet-Draft                  template                    January 2015
+Internet-Draft                  template                     August 2018
 
 
     If a BGP speaker chooses to aggregate, then it SHOULD either include
@@ -307,7 +307,7 @@ Internet-Draft                  template                    January 2015
     routing, there is no longer a need to de-aggregate.  Routes SHOULD
     NOT be de-aggregated.
 
-   From [RFC4271] Section 9.2.2.2. remove:
+   From [RFC4271] Section 9.2.2.2 remove:
 
        ATOMIC_AGGREGATE:
             If at least one of the routes to be aggregated has
@@ -335,9 +335,9 @@ Internet-Draft                  template                    January 2015
 
 
 
-Kumari & Bush            Expires August 3, 2015                 [Page 6]
+Bush & Kumari           Expires February 13, 2019               [Page 6]
 
-Internet-Draft                  template                    January 2015
+Internet-Draft                  template                     August 2018
 
 
 7.  Acknowledgements
@@ -391,18 +391,9 @@ Authors' Addresses
 
 
 
-Kumari & Bush            Expires August 3, 2015                 [Page 7]
+Bush & Kumari           Expires February 13, 2019               [Page 7]
 
-Internet-Draft                  template                    January 2015
-
-
-   Warren Kumari
-   Google
-   1600 Amphitheatre Parkway
-   Mountain View, CA  94043
-   US
-
-   Email: warren@kumari.net
+Internet-Draft                  template                     August 2018
 
 
    Randy Bush
@@ -414,6 +405,13 @@ Internet-Draft                  template                    January 2015
    Email: randy@psg.com
 
 
+   Warren Kumari
+   Google
+   1600 Amphitheatre Parkway
+   Mountain View, CA  94043
+   US
+
+   Email: warren@kumari.net
 
 
 
@@ -447,5 +445,7 @@ Internet-Draft                  template                    January 2015
 
 
 
-Kumari & Bush            Expires August 3, 2015                 [Page 8]
+
+
+Bush & Kumari           Expires February 13, 2019               [Page 8]
 ```
