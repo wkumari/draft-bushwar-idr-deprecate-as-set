@@ -100,6 +100,8 @@
       AS_CONFED_SETs) from the BGP protocol, allowing "compliant"
       implementations to not implement support for them.</t>
 
+      <t/>
+
       <t>Here is a reference to an "external" (non-RFC / draft) thing: (<xref
       target="IANA.AS_Numbers"/>). And this is a link to an ID:<xref
       target="I-D.ietf-sidr-iana-objects"/>.</t>
@@ -156,9 +158,7 @@
 
                2         AS_SEQUENCE: ordered set of ASes a route in
                             the UPDATE message has traversed]]></artwork>
-          </figure></t>
-
-        <t>delete:</t>
+          </figure>delete:</t>
 
         <t><list style="empty">
             <t><figure>
@@ -178,6 +178,15 @@
 ]]></artwork>
           </figure></t>
 
+        <t>In <xref target="RFC4271"/> Section 5.1.2 remove:</t>
+
+        <t><figure>
+            <artwork><![CDATA[2) if the first path segment of the AS_PATH is of type AS_SET,
+            the local system prepends a new path segment of type
+            AS_SEQUENCE to the AS_PATH, including its own AS number in
+            that segment.]]></artwork>
+          </figure></t>
+
         <t>In <xref target="RFC4271"/> Section 9.1.2.2 replace:<figure>
             <artwork><![CDATA[          a) Remove from consideration all routes that are not tied for
          having the smallest number of AS numbers present in their
@@ -188,6 +197,8 @@
          having the smallest number of AS numbers present in their
          AS_PATH attributes.]]></artwork>
           </figure></t>
+
+        <t/>
 
         <t>In section 9.1.2.2 replace:<figure>
             <artwork><![CDATA[         Similarly, neighborAS(n) is a function that returns the
